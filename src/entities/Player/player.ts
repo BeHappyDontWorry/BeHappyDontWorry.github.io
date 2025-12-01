@@ -8,7 +8,7 @@ import { CollisionManager } from "../../shared/Engine/ColliderManager";
 import AABB from "../../shared/helpers/AxisAlignedBoundingBox";
 import { setStoreField } from "../../shared/Engine/Storage";
 const tileSize = 16;
-const margin = 1;
+// const margin = 1;
 const mapWidth = 485;
 const mapHeight = 225;
 
@@ -31,9 +31,9 @@ export class Player extends MonoBehaviour implements IPlayer {
     this.collisionManager = collision;
   }
   public drawElement(): void {
-    const tilesPerRow = Math.floor(
-      this.characterSprite?.width || 1 / (tileSize + margin)
-    );
+    // const tilesPerRow = Math.floor(
+    //   this.characterSprite?.width || 1 / (tileSize + margin)
+    // );
     // const sx = (1 % tilesPerRow) * (tileSize + margin);
     // const sy = Math.floor(1 / tilesPerRow) * (tileSize + margin);
 

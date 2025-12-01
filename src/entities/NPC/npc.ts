@@ -8,7 +8,7 @@ interface INpc {
 }
 
 const tileSize = 16;
-const margin = 1;
+// const margin = 1;
 export class NPC implements INpc { 
     name: string;
     classType: string;

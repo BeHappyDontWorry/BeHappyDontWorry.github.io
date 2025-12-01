@@ -1,5 +1,5 @@
 import { MonoBehaviour } from "../../shared/Engine/MonoBehaviour";
-import { getStoreField, setStoreField } from "../../shared/Engine/Storage";
+import { getStoreField } from "../../shared/Engine/Storage";
 
 export class ModalHandler extends MonoBehaviour { 
     ctx: CanvasRenderingContext2D;
