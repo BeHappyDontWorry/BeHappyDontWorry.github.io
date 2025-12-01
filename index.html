@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>webportfolio</title>
+  </head>
+  <body>
+    <div id="app">
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+    <div class="sound_container">
+      <button class="volumeBtn active" id="mute">
+        <img src="/src/shared/assets/volume-down.png" alt="">
+      </button>
+
+      <button class="volumeBtn" id="sound">
+        <img src="/src/shared/assets/volume.png" alt="">
+      </button>
+    </div>
+    <audio src="/src/shared/assets/music.mp3" autoplay id="audio"></audio>
+  </body>
+</html>

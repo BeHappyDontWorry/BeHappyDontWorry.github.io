@@ -1,0 +1,259 @@
+import { App } from "./app/";
+import "./styles/global.scss";
+import { InputSystem } from "./shared/Engine/InputSystem";
+
+document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
+    <div class="container">
+      <canvas id="game"></canvas>
+      <div id="notification">
+        Press E
+      </div>
+      </div>
+    <div id="modals_container" class="modals">
+  <div class="modal" id="22">
+    <div class="overlay"></div>
+    <div class="content">
+      <div>
+        <h3 class="title">Professional experience</h3>
+      </div>
+      <div class="wokr_experience_container">
+        <h5 class="position">React Developer(Strong Middle) | 2022-2024</h5>
+        <p class="company">Gremcy</p>
+        <ul class="experience-list">
+          <li class="skill">
+            Developed web applications using React, Redux Toolkit, React Router,
+            Typescript and modern frontend tools.
+          </li>
+          <li class="skill">
+            Implemented Feature-Slides Design (FSD) architecture for better
+            scalability and maintainability.
+          </li>
+          <li class="skill">
+            Optimized application perfomance and enhanced user experience.
+          </li>
+          <li class="skill">Conducted code reviews.</li>
+        </ul>
+      </div>
+      <div class="wokr_experience_container">
+        <h5 class="position">React Developer(Junior) | 2021-2022</h5>
+        <p class="company">Filancy</p>
+        <ul class="experience-list">
+          <li class="skill">
+            Built and maintained SPA applications with React.
+          </li>
+          <li class="skill">Configured project builds using Webpack.</li>
+          <li class="skill">
+            Developed a React Native mobile app with API intergation and push
+            notifications.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="23">
+    <div class="overlay"></div>
+    <div class="content">
+      <div>
+        <h3 class="title">Hobbies</h3>
+      </div>
+      <div class="wokr_experience_container">
+        <h5 class="position">React Developer(Strong Middle) | 2022-2024</h5>
+        <p class="company">Gremcy</p>
+        <ul class="experience-list">
+          <li class="skill">
+            Developed web applications using React, Redux Toolkit, React Router,
+            Typescript and modern frontend tools.
+          </li>
+          <li class="skill">
+            Implemented Feature-Slides Design (FSD) architecture for better
+            scalability and maintainability.
+          </li>
+          <li class="skill">
+            Optimized application perfomance and enhanced user experience.
+          </li>
+          <li class="skill">Conducted code reviews.</li>
+        </ul>
+      </div>
+      <div class="wokr_experience_container">
+        <h5 class="position">React Developer(Junior) | 2021-2022</h5>
+        <p class="company">Filancy</p>
+        <ul class="experience-list">
+          <li class="skill">
+            Built and maintained SPA applications with React.
+          </li>
+          <li class="skill">Configured project builds using Webpack.</li>
+          <li class="skill">
+            Developed a React Native mobile app with API intergation and push
+            notifications.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="24">
+    <div class="overlay"></div>
+    <div class="content">
+      <div>
+        <h3 class="title">Education</h3>
+      </div>
+      <div class="wokr_experience_container">
+        <h5 class="position">Maritime College named after O.I.Marinesko of National University "Odessa Maritime Academy"</h5>
+        <p class="company">2017-2020</p>
+        <ul class="experience-list">
+          <li class="skill">
+            Developed web applications using React, Redux Toolkit, React Router,
+            Typescript and modern frontend tools.
+          </li>
+          <li class="skill">
+            Implemented Feature-Slides Design (FSD) architecture for better
+            scalability and maintainability.
+          </li>
+          <li class="skill">
+            Optimized application perfomance and enhanced user experience.
+          </li>
+          <li class="skill">Conducted code reviews.</li>
+        </ul>
+      </div>
+      <div class="wokr_experience_container">
+        <h5 class="position">React Developer(Junior) | 2021-2022</h5>
+        <p class="company">Filancy</p>
+        <ul class="experience-list">
+          <li class="skill">
+            Built and maintained SPA applications with React.
+          </li>
+          <li class="skill">Configured project builds using Webpack.</li>
+          <li class="skill">
+            Developed a React Native mobile app with API intergation and push
+            notifications.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="25">
+    <div class="overlay"></div>
+    <div class="content">
+      <div>
+        <h3 class="title">About me</h3>
+      </div>
+      <div class="wokr_experience_container">
+        <h5 class="position">React Developer(Strong Middle) | 2022-2024</h5>
+        <p class="company">Gremcy</p>
+        <ul class="experience-list">
+          <li class="skill">
+            Developed web applications using React, Redux Toolkit, React Router,
+            Typescript and modern frontend tools.
+          </li>
+          <li class="skill">
+            Implemented Feature-Slides Design (FSD) architecture for better
+            scalability and maintainability.
+          </li>
+          <li class="skill">
+            Optimized application perfomance and enhanced user experience.
+          </li>
+          <li class="skill">Conducted code reviews.</li>
+        </ul>
+      </div>
+      <div class="wokr_experience_container">
+        <h5 class="position">React Developer(Junior) | 2021-2022</h5>
+        <p class="company">Filancy</p>
+        <ul class="experience-list">
+          <li class="skill">
+            Built and maintained SPA applications with React.
+          </li>
+          <li class="skill">Configured project builds using Webpack.</li>
+          <li class="skill">
+            Developed a React Native mobile app with API intergation and push
+            notifications.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="26">
+    <div class="overlay"></div>
+    <div class="content">
+      <div>
+        <h3 class="title">Skills</h3>
+      </div>
+      <div class="wokr_experience_container">
+        <h5 class="position">React Developer(Strong Middle) | 2022-2024</h5>
+        <p class="company">Gremcy</p>
+        <ul class="experience-list">
+          <li class="skill">
+            Developed web applications using React, Redux Toolkit, React Router,
+            Typescript and modern frontend tools.
+          </li>
+          <li class="skill">
+            Implemented Feature-Slides Design (FSD) architecture for better
+            scalability and maintainability.
+          </li>
+          <li class="skill">
+            Optimized application perfomance and enhanced user experience.
+          </li>
+          <li class="skill">Conducted code reviews.</li>
+        </ul>
+      </div>
+      <div class="wokr_experience_container">
+        <h5 class="position">React Developer(Junior) | 2021-2022</h5>
+        <p class="company">Filancy</p>
+        <ul class="experience-list">
+          <li class="skill">
+            Built and maintained SPA applications with React.
+          </li>
+          <li class="skill">Configured project builds using Webpack.</li>
+          <li class="skill">
+            Developed a React Native mobile app with API intergation and push
+            notifications.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="27">
+    <div class="overlay"></div>
+    <div class="content">
+      <div>
+        <h3 class="title">Hobbies</h3>
+      </div>
+      <div class="wokr_experience_container">
+        <h5 class="position">React Developer(Strong Middle) | 2022-2024</h5>
+        <p class="company">Gremcy</p>
+        <ul class="experience-list">
+          <li class="skill">
+            Developed web applications using React, Redux Toolkit, React Router,
+            Typescript and modern frontend tools.
+          </li>
+          <li class="skill">
+            Implemented Feature-Slides Design (FSD) architecture for better
+            scalability and maintainability.
+          </li>
+          <li class="skill">
+            Optimized application perfomance and enhanced user experience.
+          </li>
+          <li class="skill">Conducted code reviews.</li>
+        </ul>
+      </div>
+      <div class="wokr_experience_container">
+        <h5 class="position">React Developer(Junior) | 2021-2022</h5>
+        <p class="company">Filancy</p>
+        <ul class="experience-list">
+          <li class="skill">
+            Built and maintained SPA applications with React.
+          </li>
+          <li class="skill">Configured project builds using Webpack.</li>
+          <li class="skill">
+            Developed a React Native mobile app with API intergation and push
+            notifications.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+`;
+
+InputSystem.init();
+const main = new App();
+main.run();
