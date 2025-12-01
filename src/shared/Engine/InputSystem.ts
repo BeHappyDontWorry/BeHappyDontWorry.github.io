@@ -19,7 +19,6 @@ export abstract class InputSystem implements IInputSystem {
    window.addEventListener('keyup',(e) => {
       const modalID = getStoreField('colliders');
        if (e.code === "KeyE" && !e.repeat && modalID.id) {
-         console.log(modalID);
           modals.forEach((element)=> { 
             if(Number(element.id) === Number(modalID.id)){ 
                element?.classList.toggle("open");
