@@ -424,38 +424,6 @@
                   "x":1,
                   "y":171
                  }
-                }, 
-                {
-                 "gid":620,
-                 "height":16,
-                 "id":7,
-                 "name":"ContactInformation",
-                 "rotation":0,
-                 "type":"NPC",
-                 "visible":true,
-                 "width":16,
-                 "x":368.725512841665,
-                 "y":48.1473904196227,
-                 "imgPosition":{
-                  "x":18,
-                  "y":154
-                 }
-                }, 
-                {
-                 "gid":674,
-                 "height":16,
-                 "id":8,
-                 "name":"Skills",
-                 "rotation":0,
-                 "type":"NPC",
-                 "visible":true,
-                 "width":16,
-                 "x":351.529366747513,
-                 "y":96.2189237504122,
-                 "imgPosition":{
-                  "x":18,
-                  "y":171
-                 }
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -511,17 +479,6 @@
                  "width":32,
                  "x":415.969877113295,
                  "y":128.119369490867
-                }, 
-                {
-                 "height":32,
-                 "id":26,
-                 "name":"Collider",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":368.725512841665,
-                 "y":48.1473904196227
                 }, 
                 {
                  "height":32,
